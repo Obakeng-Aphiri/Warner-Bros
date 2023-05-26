@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+body{background: black;}
+/* Navigation */
+.header{
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 120px;
+}
+nav{
+    display: flex;
+    padding:2% 6% ;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 115px;
+}
+.nav-links{
+    display: flex;
+    text-align: right;
+    column-gap: 5rem;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding:8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+} 
+.nav-links ul li a::after{
+    content:"";
+    width: 0;
+    height:2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s all linear;
+}
+.nav-links ul li a:hover::after,
+.nav-links .index-active::after{
+    width: 100%;}
+    
+    /* Rampage */
+.video-container{
+    width:100%;
+    height:599px;
+}
+
+.info{
+    position: relative;
+    top: 0;
+    height:500px;
+    padding-left:110px;
+    background-color: #02161c;
+}
+.info .info1{
+    position:absolute;
+    top:88px;
+    height:200px;
+    width:82%;
+}
+.info .info1 .about{
+    width:810px;
+    float: left;
+    margin-right:70px;
+}
+.info .info1 .info2{
+    overflow: hidden;
+}
+
+.info .info1 p{
+    color: #b2cfd7;
+    line-height:24px;
+}
+.info .info1 h2{
+    color:#fff;
+    margin-bottom:18px;
+    font-size:20px;
+}
+.info .info1 .info2 p{
+    text-decoration:underline;
+}
+.info .info1 p{
+    font-size: 14px;
+}
+.info .info3{
+    position: absolute;
+    top: 288px;
+    height:200px;
+    width:82% ;
+}
+.info .info3 h2{
+    color: #fff;
+    font-size: 20px;  
+}
+.info .info4{
+    width:240px;
+    display: flex;
+    float: left;
+    align-items: center;
+    height: 120px;
+    margin-right:47px;
+}
+.info3 .label .label2{
+    width: 100px;
+    float:left;
+    margin-right: 0px;
+    line-height:20px;
+}
+.info .info3 .info4:last-child{
+    margin: 0px;
+}
+.info3 .label2 h5{
+    color:ghostwhite;  
+}
+.info3 .label2 h6{
+    color: rgb(152,152,153);
+}
+
+
+/* Feedback form */
+.header-form{
+    background-size:cover ;
+    background-color:#5e757c ;
+}
+.wrap{
+    width: 900px;
+    height: 800px;
+    margin:30px auto;
+}
+.wrap h1{
+    font-size: 70px;
+    color:white;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+table{
+    font-size:30px ;
+}
+td{
+    padding:10px 20px 0px 0px ;
+}
+.txt{
+    width:400px;
+    height: 50px;
+    border-radius:8px;
+}
+.txtarea{
+    width:830px;
+    height: 150px;
+    border-radius:8px;
+}
+.subfeed{
+    width:100px;
+    height: 50px;
+    background-color: darkblue;
+    border-radius:8px;
+    font-size:20px;
+    color:white;
+}
+
+.footer{
+    max-width: 968px;
+    margin-left:auto;
+    margin-right: auto;
+    display: flex;
+    justify-content:space-between;
+}
+.social{
+    display: flex;
+    align-items:center;
+    column-gap: 0.5rem;
+}
+.social.bx{
+    background:#fff;
+    width:120px;
+    font-size: 2rem;
+    padding: 2rem;
+    border-radius: 50%;
+    border: 4px solid rgb(2,3,7,0.4);
+    color:#ff2c1f;
+}
+.footer img{
+    width: 118px;
+}
+.social.bx:hover{
+    background: #ff2c1f;
+    transition:0.2s all linear ;
+}
+.heading{
+    max-width: 968px;
+    margin-left:auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-bottom:1px solid #ff2c1f;
+    color: #fff;
+}
+.movies-container {
+    max-width: 968px;
+    margin-left:auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,auto));
+    gap:1rem;
+    margin-top:2rem;
+}
+.box .box-img{
+    width:100%;
+    height:270px;
+}
+.box .box-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.box .box-img img:hover {
+    transform: translateY(-10px);
+    transition: 0.2s all linear;
+}
+.box h3{
+    font-size:0.9rem;
+    font-weight:500 ;
+    color: #fff;
+
+}
+.box span{
+    font-size:13px;
+    color: #fff;
+}
+.copyright{
+    padding:20px;
+    text-align: center;
+    color: #fff;
+}
+
